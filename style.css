@@ -6,3 +6,12 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.flex-row{
+  align-content: center;
+  left: 50%;
+}
+.section{
+  color:black;
+  background-color: blanchedalmond;
+  align-content: center;
+}
