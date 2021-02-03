@@ -1,10 +1,11 @@
-/*  För att undvika buggar har jag använt lokala variabler så mycket som möjligt och undvikt att använda globala variabler som "new" och "==".
+/*  För att undvika buggar har jag använt lokala variabler så mycket som möjligt och undvikt att använda globala variabler.
     Här har vi inte heller använt oss utav "strict" då det inte finns några odeklarerade variabler som kan ställa till det.
     För att undvika förvirring så har jag jobbat med code-refactoring, tagit bort/adderat white space och försökt göra det så lättläsligt som möjligt.
-    En bra praxis hade vart att trycka in en try/catch/finally någonstans, men det har jag ej gjort. 
+    Här har jag försökt implementera "coding conventions" för att ge utvecklaren (eller den som läser min kod) en smidigare upplevelse samt för att bättra min egna kod.
+    En bra praxis hade vart att trycka in en try/catch/finally någonstans för att fånga eventuella buggar, men det har jag ej gjort. 
     
-    Under debuggingen så har jag korrekturläst koden multipla gånger, bytt namn på funktioner, jämfört min och annan kod samt skrivit om min kod flera gånger 
-    för att på så sätt försöka hitta buggar och fel jag inte lagt märke till tidigare. Det finns säkert snabbare sätt att felsöka men jag valde att göra som jag gjorde
+    Under debuggingen så har jag korrekturläst koden multipla gånger, bytt namn på funktioner, jämfört min och annan kod samt skrivit om min kod och börjat om helt och hållet flera gånger 
+    för att på så sätt försöka hitta buggar och fel jag inte har lagt märke till tidigare. Det finns säkert snabbare sätt att felsöka men jag valde att göra som jag gjorde
     då jag kände att det endast gynnar mig att lägga extra tid på att skriva/skriva om kod och bekanta mig med språket.   */ 
 
 document.addEventListener("DOMContentLoaded", onPageLoad);
@@ -45,7 +46,7 @@ function makeSections(count)
 
     }
 }
-
+// Nedan har vi en funktion som vi kallar på för att radera blogginläggen efter att dom har visats.
 function removeAllSections()
 {
     var test_sections = document.querySelectorAll("section");
@@ -54,7 +55,7 @@ function removeAllSections()
         test_sections[i].remove();
     }
 }
-
+// Nedan har vi en funktion som vi kallar på för att kunna editera/ersätta innehållet i vårt blogginlägg. 
 function makeEditable(elem)
 {
     elem.onclick = function(e)
