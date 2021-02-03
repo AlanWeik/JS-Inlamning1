@@ -7,10 +7,17 @@ footer {
   left: 0%;
 }
 .flex-col{
-  display:flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: center;
 }
 header{
-
+  text-align: center;
+  right: 50%
+}
+section{
+  text-align: center;
+  box-shadow: 1px 5px 5px 1px #2b2a2a;
+  margin: 10px;
+  padding: 5px;
 }

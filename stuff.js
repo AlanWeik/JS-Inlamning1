@@ -17,12 +17,12 @@ function makeSections(count)
     for (var i = 0; i < count; i++) 
     {
         var parent = document.querySelector("main");
-        
+
         var child = document.createElement("section");
-        var title = document.createElement("h4");
+        var title = document.createElement("h3");
         var para = document.createElement("p");
 
-        title.innerText = "Title " + i;
+        title.innerText = "Tjaaaa Bloggäääääääään " + i;
         para.innerText = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Inventore harum, quasi dicta ex totam quisquam quo tempore maxime, 
         commodi praesentium eius quod suscipit! 
