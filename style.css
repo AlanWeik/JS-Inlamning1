@@ -6,10 +6,6 @@ footer{
   width: 100%;
   left: 0%;
 }
-.flex-col{
-  justify-content: space-between;
-  text-align: center;
-}
 header{
   text-align: center;
   color:black;
