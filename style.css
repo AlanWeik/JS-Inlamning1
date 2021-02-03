@@ -4,11 +4,7 @@ footer {
   position: fixed;
   text-align: center;
   width: 100%;
-}
-section{
-  color:black;
-  background-color: blanchedalmond;
-  align-content: center;
+  left: 0%;
 }
 .flex-col{
   display:flex;
@@ -16,4 +12,5 @@ section{
   flex-direction: column;
 }
 header{
+
 }
