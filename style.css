@@ -1,4 +1,4 @@
-footer {
+footer{
   background-color: rgb(235, 164, 107);
   bottom: 0;
   position: fixed;
@@ -8,12 +8,11 @@ footer {
 }
 .flex-col{
   justify-content: space-between;
-  flex-direction: column;
   text-align: center;
 }
 header{
   text-align: center;
-  right: 50%
+  color:black;
 }
 section{
   text-align: center;
